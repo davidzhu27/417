@@ -157,6 +157,10 @@ U2D
 SpriteBone
 LocalizationAsset
 UnityEditor
+CurrentPlayer
+Unity
+Multiplayer
+Playmode
 SpriteShapeParameters
 UnityEngine
 Experimental
