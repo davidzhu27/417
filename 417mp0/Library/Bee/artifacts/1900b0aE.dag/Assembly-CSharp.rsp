@@ -138,6 +138,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_6_OR_NEWER
 -define:USE_INPUT_SYSTEM_POSE_CONTROL
 -define:USE_STICK_CONTROL_THUMBSTICKS
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
@@ -421,6 +422,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Multiplayer.Center.Common.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Multiplayer.Center.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rendering.LightTransport.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Editor.ref.dll"
@@ -491,6 +494,12 @@
 "Assets/LightSwitch.cs"
 "Assets/Orbit.cs"
 "Assets/Quit.cs"
+"Assets/SciFi Warehouse Kit/Demo/Scripts/LightFlicker.cs"
+"Assets/SciFi Warehouse Kit/Demo/Scripts/MouseComponent.cs"
+"Assets/SciFi Warehouse Kit/Demo/Scripts/PlayerMovement.cs"
+"Assets/SciFi Warehouse Kit/Demo/Scripts/PlayRandomSound.cs"
+"Assets/SciFi Warehouse Kit/Demo/Scripts/PushPhysics.cs"
+"Assets/SlideDoor.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic

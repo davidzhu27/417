@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.7f1 (696ec25a53d1) revision 6909634'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Education' Language: 'en' Physical Memory: 16310 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-David" at "2026-02-13T00:48:33.9949385Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-David" at "2026-02-15T22:56:39.5228608Z"
 Process architecture: x64
-Date: 2026-02-13T00:48:33Z
+Date: 2026-02-15T22:56:39Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.7f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/David/Documents/GitHub/417mp0/417mp0
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-59702
+55926
 -licensingIpc
 LicenseClient-David
 -job-worker-count
@@ -67,12 +67,12 @@ C:/Users/David/Documents/GitHub/417mp0/417mp0
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [27052]  Target information:
+Player connection [19496]  Target information:
 
-Player connection [27052]  * "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 398263915 [EditorId] 398263915 [Version] 1048832 [Id] WindowsEditor(7,Clanker) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [19496]  * "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 816834233 [EditorId] 816834233 [Version] 1048832 [Id] WindowsEditor(7,Clanker) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27052] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [27052] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19496] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19496] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 26.47 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 713.72 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.7f1 (696ec25a53d1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -100,46 +100,55 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
 Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              facd115813b046b3b68fc07f7354fdb7
+  Correlation Id:          cf7bd1cdebd5df81af440b9ac2a3feb6
+  External correlation Id: 1570566368403466255
+  Machine Id:              oOO++Go59dRVU4f7iHP3tHccoWM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-David" (connect: 0.00s, validation: 0.00s, handshake: 2.68s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-David-notifications" at "2026-02-15T22:56:42.2090716Z"
+[Licensing::Module] Licensing Background thread has ended after 2.69s
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002574 seconds.
-- Loaded All Assemblies, in  0.940 seconds
+Registered in 0.003331 seconds.
+- Loaded All Assemblies, in  0.822 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.999 seconds
-Domain Reload Profiling: 1934ms
-	BeginReloadAssembly (334ms)
+- Finished resetting the current domain, in  0.496 seconds
+Domain Reload Profiling: 1315ms
+	BeginReloadAssembly (183ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (88ms)
-	RebuildNativeTypeToScriptingClass (44ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (382ms)
-		LoadAssemblies (332ms)
+	RebuildCommonClasses (212ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (359ms)
+		LoadAssemblies (180ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (373ms)
-			TypeCache.Refresh (369ms)
-				TypeCache.ScanAssembly (335ms)
+		AnalyzeDomain (355ms)
+			TypeCache.Refresh (353ms)
+				TypeCache.ScanAssembly (338ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (999ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (496ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (823ms)
+		SetupLoadedEditorAssemblies (448ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (104ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (205ms)
-			ProcessInitializeOnLoadAttributes (357ms)
-			ProcessInitializeOnLoadMethodAttributes (151ms)
+			InitializePlatformSupportModulesInManaged (49ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (195ms)
+			ProcessInitializeOnLoadMethodAttributes (86ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -148,17 +157,6 @@ Domain Reload Profiling: 1934ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              6b3eaacd0499420d986c9691e534f4ed
-  Correlation Id:          20656f7596a171deac2aac67fc4169ec
-  External correlation Id: 7970275744217223064
-  Machine Id:              oOO++Go59dRVU4f7iHP3tHccoWM=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-David" (connect: 0.00s, validation: 0.00s, handshake: 4.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-David-notifications" at "2026-02-13T00:48:38.0064784Z"
-[Licensing::Module] Licensing Background thread has ended after 4.01s
-[Licensing::Module] Licensing is initialized (took 0.59s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 2474567028694-UnityPersXXXX
@@ -166,11 +164,11 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.804 seconds
-Refreshing native plugins compatible for Editor in 11.32 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.919 seconds
+Refreshing native plugins compatible for Editor in 8.37 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 10.93 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 6.25 ms, found 9 plugins.
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -183,161 +181,1514 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.851 seconds
-Domain Reload Profiling: 3646ms
-	BeginReloadAssembly (844ms)
+- Finished resetting the current domain, in  1.107 seconds
+Domain Reload Profiling: 2022ms
+	BeginReloadAssembly (203ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (52ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (795ms)
-		LoadAssemblies (516ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (619ms)
+		LoadAssemblies (421ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (406ms)
-			TypeCache.Refresh (272ms)
-				TypeCache.ScanAssembly (250ms)
-			BuildScriptInfoCaches (113ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1852ms)
+		AnalyzeDomain (305ms)
+			TypeCache.Refresh (199ms)
+				TypeCache.ScanAssembly (174ms)
+			BuildScriptInfoCaches (89ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1108ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1393ms)
+		SetupLoadedEditorAssemblies (830ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (352ms)
-			ProcessInitializeOnLoadAttributes (665ms)
-			ProcessInitializeOnLoadMethodAttributes (343ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 35.19 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7762 unused Assets / (3.4 MB). Loaded Objects now: 8572.
-Memory consumption went from 157.9 MB to 154.6 MB.
-Total: 22.121200 ms (FindLiveObjects: 2.161700 ms CreateObjectMapping: 2.363700 ms MarkObjects: 13.466200 ms  DeleteObjects: 4.128100 ms)
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.051 seconds
-Refreshing native plugins compatible for Editor in 9.12 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.266 seconds
-Domain Reload Profiling: 2319ms
-	BeginReloadAssembly (303ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (93ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (648ms)
-		LoadAssemblies (528ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (260ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (228ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1266ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1050ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (296ms)
-			ProcessInitializeOnLoadAttributes (577ms)
-			ProcessInitializeOnLoadMethodAttributes (157ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (232ms)
+			ProcessInitializeOnLoadAttributes (429ms)
+			ProcessInitializeOnLoadMethodAttributes (151ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 9.65 ms, found 9 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 12.16 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7759 unused Assets / (6.2 MB). Loaded Objects now: 8588.
-Memory consumption went from 225.8 MB to 219.5 MB.
-Total: 15.874500 ms (FindLiveObjects: 1.854300 ms CreateObjectMapping: 1.245300 ms MarkObjects: 9.046100 ms  DeleteObjects: 3.727100 ms)
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7872 unused Assets / (6.3 MB). Loaded Objects now: 8705.
+Memory consumption went from 163.8 MB to 157.5 MB.
+Total: 20.873900 ms (FindLiveObjects: 2.044600 ms CreateObjectMapping: 1.519900 ms MarkObjects: 12.289300 ms  DeleteObjects: 5.018800 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.996 seconds
-Refreshing native plugins compatible for Editor in 12.53 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.271 seconds
-Domain Reload Profiling: 2269ms
-	BeginReloadAssembly (268ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (81ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (641ms)
-		LoadAssemblies (454ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (304ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (265ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1272ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1037ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (307ms)
-			ProcessInitializeOnLoadAttributes (538ms)
-			ProcessInitializeOnLoadMethodAttributes (170ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 6.46 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7759 unused Assets / (5.9 MB). Loaded Objects now: 8591.
-Memory consumption went from 225.8 MB to 219.9 MB.
-Total: 8.850200 ms (FindLiveObjects: 0.791300 ms CreateObjectMapping: 0.405100 ms MarkObjects: 5.070500 ms  DeleteObjects: 2.582500 ms)
+Received Import Request.
+  Time since last request: 182218.180371 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv07.prefab
+  artifactKey: Guid(67c6e02e204ef6244a8f475a94826851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv07.prefab using Guid(67c6e02e204ef6244a8f475a94826851) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75dfee64a734e399e93ebd604561d0ed') in 0.4312931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.214565 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv05.prefab
+  artifactKey: Guid(ee88617da51e3e8479a812f9d58a94be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv05.prefab using Guid(ee88617da51e3e8479a812f9d58a94be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19bdf6791588d1728487a6cacd585565') in 0.0442282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 41
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Resources/Meshes/Materials/TranslucentCrystal.mat
+  artifactKey: Guid(98b9485a3da80d64598ed3d04774afdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Resources/Meshes/Materials/TranslucentCrystal.mat using Guid(98b9485a3da80d64598ed3d04774afdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1ae56848684eb30b92db6e671339e0af') in 0.0913114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Scenes/DemoScene/ReflectionProbe-0.exr
+  artifactKey: Guid(17dcd49120358e940a0b16890750e0d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Scenes/DemoScene/ReflectionProbe-0.exr using Guid(17dcd49120358e940a0b16890750e0d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a41369a7290560aaa69e79b49e0d8f1') in 0.0601792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Gamma/Crystalsv01.prefab
+  artifactKey: Guid(cc0fd657b60ef8c499b057056b948f16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Gamma/Crystalsv01.prefab using Guid(cc0fd657b60ef8c499b057056b948f16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85ee3cd76fa5a5f89a63a72f4089bfc8') in 0.0336407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Scenes/DemoSceneGamma/ReflectionProbe-0.exr
+  artifactKey: Guid(01002d6e01ad23a41b427f8dda71563f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Scenes/DemoSceneGamma/ReflectionProbe-0.exr using Guid(01002d6e01ad23a41b427f8dda71563f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9682642d34e5796734599bb5d8ebf7b') in 0.0184693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Resources/Materials/TranslucentCrystalv04Gamma.mat
+  artifactKey: Guid(241fff3b9eb49d642a36366425f45d20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Resources/Materials/TranslucentCrystalv04Gamma.mat using Guid(241fff3b9eb49d642a36366425f45d20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '885d2d2028e5823c59551d13437a0127') in 0.0246301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Resources/Materials/TranslucentCrystalv09.mat
+  artifactKey: Guid(f787b1b6b94cd924083596cec3729246) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Resources/Materials/TranslucentCrystalv09.mat using Guid(f787b1b6b94cd924083596cec3729246) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ce8601a813b2007c838e76c89fb47fa') in 0.0233539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Resources/Materials/TranslucentCrystalv01.mat
+  artifactKey: Guid(416d15cd169c5a0468b8346abad16527) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Resources/Materials/TranslucentCrystalv01.mat using Guid(416d15cd169c5a0468b8346abad16527) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08ee35edc87eb9175f457faab0b3684a') in 0.0250916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Resources/EnvironmentMaterials/PrototypeGrid_Emission.png
+  artifactKey: Guid(4cac81b5211748e4e982bff8014df8d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SineVFX/TranslucentCrystals/Resources/EnvironmentMaterials/PrototypeGrid_Emission.png using Guid(4cac81b5211748e4e982bff8014df8d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5c4b408f683020fc5301d297dc65c2a') in 0.0346741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.909623 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv06.prefab
+  artifactKey: Guid(4aa7f4f0acab60742bea9a9f6a3bb144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv06.prefab using Guid(4aa7f4f0acab60742bea9a9f6a3bb144) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0689d5c27c246d310d8000ab6a33d7be') in 0.0579029 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 41
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.839775 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/_SRP
+  artifactKey: Guid(094704b73c193a349b09f02ee2d328a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/_SRP using Guid(094704b73c193a349b09f02ee2d328a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f2ca45879bf1c9dbbcf261ed1faeb16') in 0.0005005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.224253 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv08.prefab
+  artifactKey: Guid(da6e8bbd483d22c449e703a7e40afde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv08.prefab using Guid(da6e8bbd483d22c449e703a7e40afde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f63567e4493aae2f86a0e97d07947f6b') in 0.0670749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.786091 seconds.
+  path: Assets/SineVFX/PostProcessingV2
+  artifactKey: Guid(baa2d3d1c14d40e4da5c8a263953d32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/PostProcessingV2 using Guid(baa2d3d1c14d40e4da5c8a263953d32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '667cc82b9b662ad8506da7444e6227a3') in 0.0005136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.852937 seconds.
+  path: Assets/SineVFX/PostProcessingV2/New Post-processing Profile.asset
+  artifactKey: Guid(f043b5f7d71f5934ca0fcbecd6c97782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/PostProcessingV2/New Post-processing Profile.asset using Guid(f043b5f7d71f5934ca0fcbecd6c97782) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd36ddfc848941f22ebde5d721448f11d') in 0.0076096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.756549 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Scenes
+  artifactKey: Guid(6918244c62cfd184ab4412a0e687f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/Scenes using Guid(6918244c62cfd184ab4412a0e687f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b9ec8975cb8b6ee38174c013a35c43e') in 0.0004996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.915239 seconds.
+  path: Assets/BreakOut.cs
+  artifactKey: Guid(89f2ed6eec8848a45ab8578e0b9b19f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/BreakOut.cs using Guid(89f2ed6eec8848a45ab8578e0b9b19f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd5da42a8660fbfbcd25ce81dbcf12333') in 0.0162542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/XR/XRGeneralSettingsPerBuildTarget.asset
+  artifactKey: Guid(89fa757e06c9f7448b7fdfe7e9e5ae20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/XR/XRGeneralSettingsPerBuildTarget.asset using Guid(89fa757e06c9f7448b7fdfe7e9e5ae20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd13b51556a5b8bbf02b99f9c91ca857c') in 0.0850815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/XR/Settings/OpenXR Editor Settings.asset
+  artifactKey: Guid(1e0870d5f87d9ee40aa8ff893f668a92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/XR/Settings/OpenXR Editor Settings.asset using Guid(1e0870d5f87d9ee40aa8ff893f668a92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db170f597adc98af15f914af2cdfeea3') in 0.0311273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
+  artifactKey: Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph using Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22a2155b991d1c8dbfbb0f5690a6d819') in 0.9542153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/lamp.prefab
+  artifactKey: Guid(d4e217778e534cb4fa3724d3da631d58) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/lamp.prefab using Guid(d4e217778e534cb4fa3724d3da631d58) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '556c08afdd9fa1ad7108d98a5dcf7ec8') in 0.1053088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/documents.prefab
+  artifactKey: Guid(9ae45fdfc92844d42a484dd8a4e0ae0d) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/documents.prefab using Guid(9ae45fdfc92844d42a484dd8a4e0ae0d) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '8a492c67b10b420069d21aa95e5416b8') in 0.035291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/tableEndLit.obj
+  artifactKey: Guid(e450c1265206c30418da824a4561ff84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/tableEndLit.obj using Guid(e450c1265206c30418da824a4561ff84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbae049896637c883954e7ddacdabcfd') in 0.0622943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/keypad.prefab
+  artifactKey: Guid(769d0371e7869b74db5b2dd0139d5279) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/keypad.prefab using Guid(769d0371e7869b74db5b2dd0139d5279) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'c870ed6e7a07121dfeb1cc0b6b89b217') in 0.0465244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/keyboard.prefab
+  artifactKey: Guid(b62a967d3de8c1046995333b45ae13f4) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/keyboard.prefab using Guid(b62a967d3de8c1046995333b45ae13f4) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '7269cd4e1ae593cda0eee2a1210e44c2') in 0.0580584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+  artifactKey: Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader using Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c98c762a97c5a1b8d73d0fd46b138479') in 0.0184267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/waterCooler.obj
+  artifactKey: Guid(f3f538069160ced4faacf632ffd03a5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/waterCooler.obj using Guid(f3f538069160ced4faacf632ffd03a5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21d5f3cb2c0440c8ba505cf2381dbbde') in 0.020156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ADI/Voxel Office Props/Vox Files/phone.vox
+  artifactKey: Guid(1db3407743bd95e4fa0976bef87c166f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Vox Files/phone.vox using Guid(1db3407743bd95e4fa0976bef87c166f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'acd0d48a77142ca5bf83fd95127eda8c') in 0.012707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/ADI/Voxel Office Props/Vox Files/documents.vox
+  artifactKey: Guid(5bbd18302a2e2dc46b1a4d12472f1037) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Vox Files/documents.vox using Guid(5bbd18302a2e2dc46b1a4d12472f1037) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be30045ccee7e619c47da326348155b6') in 0.015593 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ADI/Voxel Office Props/Vox Files/fillingCabinetDraw.vox
+  artifactKey: Guid(1abd910e2b9579b40a47da42dcd17c49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Vox Files/fillingCabinetDraw.vox using Guid(1abd910e2b9579b40a47da42dcd17c49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '80065238bf5072e55a87436b22230188') in 0.0136265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ADI/Voxel Office Props/Vox Files/glassDoor.vox
+  artifactKey: Guid(8295e972c1311c347ab597c26c220a1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Vox Files/glassDoor.vox using Guid(8295e972c1311c347ab597c26c220a1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6211b8ad8e607cdfa8007cf5b15da2a4') in 0.0127324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/smartPhone.obj
+  artifactKey: Guid(a7903522ce785ee449760ce2b5892092) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/smartPhone.obj using Guid(a7903522ce785ee449760ce2b5892092) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b50c32f87eba4928130637786fbe59d') in 0.0206005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/printer.prefab
+  artifactKey: Guid(79a5b937093a5864d91d9a3a836ff1d7) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/printer.prefab using Guid(79a5b937093a5864d91d9a3a836ff1d7) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '9bb2c5e4600a4e6efc3491845f9a11e5') in 0.0392057 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'abde29d9165bc082b027fe47d2592568') in 0.0145856 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7854e2be4c279187b443a5fd7fd5e82') in 0.0203065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c54d1545b1ba0e34a769df67026c05a') in 0.0146176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/tableEnd.prefab
+  artifactKey: Guid(d7d2539748bafe84c9bdd4224d951310) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/tableEnd.prefab using Guid(d7d2539748bafe84c9bdd4224d951310) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '76caf7834bc05af77301de53e11a1e56') in 0.045775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TutorialInfo/Scripts/Readme.cs
+  artifactKey: Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TutorialInfo/Scripts/Readme.cs using Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c830fd89f386f4439036e7f75b24aeb6') in 0.0139458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl
+  artifactKey: Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl using Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eac292007eb2aa22e6733dbf93d70fe4') in 0.0195564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/lamp.obj
+  artifactKey: Guid(7102cd2f50455c6459f5f9e7994db327) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/lamp.obj using Guid(7102cd2f50455c6459f5f9e7994db327) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e082624cea974cc7a3211472b194f51') in 0.0203705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Materials/Shelf Trans Mat.mat
+  artifactKey: Guid(b95048f5a5f84304d96d6f5e61414ed2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Materials/Shelf Trans Mat.mat using Guid(b95048f5a5f84304d96d6f5e61414ed2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55dba36a2d7c9fdc5644418f19eb9c88') in 0.0500007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Materials/Structure Mat.mat
+  artifactKey: Guid(8ff1df6862ae9684eb34810df64bc115) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Materials/Structure Mat.mat using Guid(8ff1df6862ae9684eb34810df64bc115) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd31abb9fb894d10f24ea1eac2126c205') in 0.0396629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Sample scene.unity
+  artifactKey: Guid(9202c0a45e28b564895f9f947c5a8d06) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Sample scene.unity using Guid(9202c0a45e28b564895f9f947c5a8d06) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter)Opening scene 'Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Sample scene.unity additively'
+LightingSettings: switching bake backend from 2 to 1.
+Loaded scene 'Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Sample scene.unity'
+	Deserialize:            709.573 ms
+	Integration:            74.348 ms
+	Integration of assets:  8.493 ms
+	Thread Wait Time:       -0.020 ms
+	Total Operation Time:   792.394 ms
+ -> (artifact id: 'eb045682c63d4af5576f76a8462c9ce9') in 1.734741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 650
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/stairs_a.png
+  artifactKey: Guid(115de000336353d4f822bcb224d8c6a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/stairs_a.png using Guid(115de000336353d4f822bcb224d8c6a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9fc56f75eb649e18d404fc97d11f3a39') in 0.0195278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/shelf_s.png
+  artifactKey: Guid(e02f929b02feb5d40a05be10163de3b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/shelf_s.png using Guid(e02f929b02feb5d40a05be10163de3b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c06deb47986715d51eddc30290dec64c') in 0.0317556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/walls_a.png
+  artifactKey: Guid(b23b96e58405f5a47a3552f22652ba7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/walls_a.png using Guid(b23b96e58405f5a47a3552f22652ba7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '062073e0a760a15896b9381f10dd0055') in 0.0202832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv09.prefab
+  artifactKey: Guid(5f285e9508d4e3f4488b284bb80a0b9b) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv09.prefab using Guid(5f285e9508d4e3f4488b284bb80a0b9b) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '96ccc07f18e7bc66c109097b78723f54') in 0.0275722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/structure_misc_r.png
+  artifactKey: Guid(4c2c9ae5782671e478ab42ef29849ff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/structure_misc_r.png using Guid(4c2c9ae5782671e478ab42ef29849ff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e6e127fc0d64ce95beb1b35cd13bc8b') in 0.0299325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/walls_r.png
+  artifactKey: Guid(74784f858e1a70842a44ed79e28364fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/walls_r.png using Guid(74784f858e1a70842a44ed79e28364fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a70e89b9544723a86f1aeed797047875') in 0.0281217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Sci-Fi Barrel_Blue.prefab
+  artifactKey: Guid(5d01b94e65bdf5e409b04166af9290cd) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Sci-Fi Barrel_Blue.prefab using Guid(5d01b94e65bdf5e409b04166af9290cd) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '7d26f3d255ba209b2b5532d9528d7736') in 0.0370317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset
+  artifactKey: Guid(2417fd88de8c0c7418cd132db95cc5d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset using Guid(2417fd88de8c0c7418cd132db95cc5d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd039e48f2d67317633c84dd968778e24') in 0.0353854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/Materials/binMat.mat
+  artifactKey: Guid(becc624bdbca78c409920b7cf31b4a16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/Materials/binMat.mat using Guid(becc624bdbca78c409920b7cf31b4a16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cfc0598b2ff343f3c8a8df8573759586') in 0.0181327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/Materials/keypadMat.mat
+  artifactKey: Guid(71b15ed9f5217794da70e757c39f6fa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/Materials/keypadMat.mat using Guid(71b15ed9f5217794da70e757c39f6fa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cad255f4920f3a4e1ea1b75da4f745f3') in 0.0176594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs
+  artifactKey: Guid(476cc7d7cd9874016adc216baab94a0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs using Guid(476cc7d7cd9874016adc216baab94a0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2e5971044c7405a00b9750bb35148885') in 0.0144483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9300f106f3f7cce2f96abdea799df14') in 0.0428298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Sci-Fi Barrel_Yellow.prefab
+  artifactKey: Guid(dce4bad8285329c4f9ce358b5c86ae55) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Sci-Fi Barrel_Yellow.prefab using Guid(dce4bad8285329c4f9ce358b5c86ae55) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'bdfff64a0c7722051e7fb29db678363b') in 0.0355026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/WONILMAX/Sci-Fi Barrel Pack/Materials/Sci-Fi Barrel Blue.mat
+  artifactKey: Guid(8729f794b5033d84ba85d6a57a0564bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WONILMAX/Sci-Fi Barrel Pack/Materials/Sci-Fi Barrel Blue.mat using Guid(8729f794b5033d84ba85d6a57a0564bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '079ff174440005e8e7c544eddc16844a') in 0.1323582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Oxy_agregate.prefab
+  artifactKey: Guid(9d3d7e6d5cafba44e977fc9cf466ab4e) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Oxy_agregate.prefab using Guid(9d3d7e6d5cafba44e977fc9cf466ab4e) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '629852ec19e029bcdabcdb89881b3ae2') in 0.0314187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/Materials/phoneMat.mat
+  artifactKey: Guid(8f0cca4930ee68c43a7dfe7bd6a4019b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/Materials/phoneMat.mat using Guid(8f0cca4930ee68c43a7dfe7bd6a4019b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '734eb618c64eb9bc4d9facc14b4a5685') in 0.0149874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/BulkHead.prefab
+  artifactKey: Guid(8cce5cb4ff24aef43824628f27698faa) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/BulkHead.prefab using Guid(8cce5cb4ff24aef43824628f27698faa) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'd6f60dbe401275f4442de1eda85a8f29') in 0.0263873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/Materials/monitorMat.mat
+  artifactKey: Guid(c2db1c77661b6cd4dbe551575416f8fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/Materials/monitorMat.mat using Guid(c2db1c77661b6cd4dbe551575416f8fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb93ae1d3954e971bbc3f61f80790e80') in 0.0178482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/Materials/smartPhoneLockedMat.mat
+  artifactKey: Guid(575949a3f4e06eb4daff86d6afac426a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/Materials/smartPhoneLockedMat.mat using Guid(575949a3f4e06eb4daff86d6afac426a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8090e5c96495612833c11e9404b201d0') in 0.0166928 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ADI/Voxel Office Props/Models/Materials/projectorMat.mat
+  artifactKey: Guid(64ed7d7c2fce4c944a701ecdab867bd1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Models/Materials/projectorMat.mat using Guid(64ed7d7c2fce4c944a701ecdab867bd1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd1d4e5c96e29ec2ba54ddf3408d08087') in 0.0166953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Geo_base.prefab
+  artifactKey: Guid(fa2bc414ff40df84e980e1f63c2491f4) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Geo_base.prefab using Guid(fa2bc414ff40df84e980e1f63c2491f4) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '05f20c2fa964b59dedf3e5e8339847a9') in 0.0293293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb119810a275c72e2e286d899f3a3be6') in 0.0150604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SciFi Warehouse Kit/Demo/Scene/SciFi_Warehouse.unity
+  artifactKey: Guid(04ba57353b4f0284686265d3d150c23c) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/SciFi Warehouse Kit/Demo/Scene/SciFi_Warehouse.unity using Guid(04ba57353b4f0284686265d3d150c23c) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter)Opening scene 'Assets/SciFi Warehouse Kit/Demo/Scene/SciFi_Warehouse.unity additively'
+Lighting data asset ‘LightingData’ is incompatible with the current Unity version because the scene it was baked for was not serialized. Please use Generate Lighting to rebuild the lighting data, or assign the target scene to the Lighting Data Asset in the inspector.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Editor\Src\GI\Enlighten\LightingDataAsset.cpp line 458]
+
+Loaded scene 'Assets/SciFi Warehouse Kit/Demo/Scene/SciFi_Warehouse.unity'
+	Deserialize:            282.267 ms
+	Integration:            1061.902 ms
+	Integration of assets:  0.147 ms
+	Thread Wait Time:       -0.052 ms
+	Total Operation Time:   1344.264 ms
+ -> (artifact id: '61165e1d81e499ee50e6b5671bae022a') in 4.3554715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2280
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Scripts/ControllerAnimator.cs
+  artifactKey: Guid(4a5f76f9ea8c80547973ab01877f9567) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Scripts/ControllerAnimator.cs using Guid(4a5f76f9ea8c80547973ab01877f9567) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06feb9ec887bf66f8679220b35a2d5ac') in 0.0150128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Materials/Telport Area.mat
+  artifactKey: Guid(be1e10ce8a6f8cc4fb08d11c7f722469) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Materials/Telport Area.mat using Guid(be1e10ce8a6f8cc4fb08d11c7f722469) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e59fa7e42b24facde9009a1c40b544a7') in 0.0191312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Shaders/UI-NoZTest.shader
+  artifactKey: Guid(a661e7516de55c047905f40ca76fe701) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Shaders/UI-NoZTest.shader using Guid(a661e7516de55c047905f40ca76fe701) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f3b47ca25b462a5d4e2a1fb9435d1f6a') in 0.0169625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Editor/InteractionSimulator.Editor.asmdef
+  artifactKey: Guid(d4d99242cc2ce4081a20cb9a4de3c223) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Editor/InteractionSimulator.Editor.asmdef using Guid(d4d99242cc2ce4081a20cb9a4de3c223) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84ec8d8de6c44fd0bc748575deb47213') in 0.0244285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Editor/XRInteractionSimulatorProjectValidation.cs
+  artifactKey: Guid(89074f9ebdc424d6fbe981bc7d49e7be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Editor/XRInteractionSimulatorProjectValidation.cs using Guid(89074f9ebdc424d6fbe981bc7d49e7be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e78665d8295618108e44afca6bcd377c') in 0.0141787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Shaders/Unlit_ShaderGraph.shadergraph
+  artifactKey: Guid(740445f1490c01e4b8feacf8d9ab5e7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Shaders/Unlit_ShaderGraph.shadergraph using Guid(740445f1490c01e4b8feacf8d9ab5e7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8bb797f28acdfc6684254b56186271ff') in 0.2025438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Structure Props/Sprinkler 05.prefab
+  artifactKey: Guid(0938980ccd4548d498afb52f86efc01c) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Structure Props/Sprinkler 05.prefab using Guid(0938980ccd4548d498afb52f86efc01c) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '4ceb6163d6e9258623660a3229d2db04') in 0.0295627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Doors Lights.fbx
+  artifactKey: Guid(04c4d664893776444ac42f486e433938) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Doors Lights.fbx using Guid(04c4d664893776444ac42f486e433938) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6fb39845e5ab65d2f90e84f670ac64f5') in 0.028894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor 4-Way.fbx
+  artifactKey: Guid(685f3c2516b9d3041970058318a5c349) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor 4-Way.fbx using Guid(685f3c2516b9d3041970058318a5c349) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12fbf788471aa9a8abb7e4feb151afe3') in 0.020876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Corner Lights.fbx
+  artifactKey: Guid(4ce6b0c7f72eca64281331f29fa951bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Corner Lights.fbx using Guid(4ce6b0c7f72eca64281331f29fa951bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3032b3a735de76a56c2ec51159af1339') in 0.0225296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Incline Full.fbx
+  artifactKey: Guid(e76df27ac8248984b956e0afc508c53d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Incline Full.fbx using Guid(e76df27ac8248984b956e0afc508c53d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73e4529877069aca8a9f6b3f0d0c06c4') in 0.021713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Props/Ducts/Duct Tee.fbx
+  artifactKey: Guid(b63bec55b1a6dfc4596b6da70ef02d16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Props/Ducts/Duct Tee.fbx using Guid(b63bec55b1a6dfc4596b6da70ef02d16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a96d39c5f77f4647b863a16c151f346b') in 0.0205312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Props/Ducts/Duct Straight.fbx
+  artifactKey: Guid(43901d630c7174040b7ca11548b6d61b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Props/Ducts/Duct Straight.fbx using Guid(43901d630c7174040b7ca11548b6d61b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06a6e58fbe3b4d2f5496f0a2070c146b') in 0.0198572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Catwalk/Catwalk Corner.fbx
+  artifactKey: Guid(8dafe4d8ed6a7ee45b9201a1ddabedb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Catwalk/Catwalk Corner.fbx using Guid(8dafe4d8ed6a7ee45b9201a1ddabedb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c4d4dacedd920a70739db8c20b347612') in 0.0191612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Corner.fbx
+  artifactKey: Guid(cae5fd5b00916314594b00729f56646b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Corridors/Corridor Corner.fbx using Guid(cae5fd5b00916314594b00729f56646b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a2cfe0742e5048a24bc789065936a96') in 0.018674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 04.fbx
+  artifactKey: Guid(20c996ef2120d4f46878fd50f9f45703) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 04.fbx using Guid(20c996ef2120d4f46878fd50f9f45703) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aede5c96a18cb9ef4cfc0ff9fc0d5dd3') in 0.0179442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Fusebox 01.fbx
+  artifactKey: Guid(ae64cb70d3f3fd244850e17178328d55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Fusebox 01.fbx using Guid(ae64cb70d3f3fd244850e17178328d55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbcd2a7367d26055849220096a63345c') in 0.0175704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 03.fbx
+  artifactKey: Guid(93b8f057a6dc5444292ff9a248b10a51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 03.fbx using Guid(93b8f057a6dc5444292ff9a248b10a51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd758eebafe5e0a0fe6ba4dfce5bf4e9') in 0.0224549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Walls/Wall BayDoor.fbx
+  artifactKey: Guid(1b74ff2139ba6ea47803d0c80ee0702a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Walls/Wall BayDoor.fbx using Guid(1b74ff2139ba6ea47803d0c80ee0702a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '97c4b7858fea72f630df86c176cc59a0') in 0.0181558 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Floor/Floor Tile 04.fbx
+  artifactKey: Guid(16c8394e6de71fe418ee7d27508f01df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Floor/Floor Tile 04.fbx using Guid(16c8394e6de71fe418ee7d27508f01df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3108652d78a473700d4097cb8a8e2bff') in 0.0207329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Fusebox 02.fbx
+  artifactKey: Guid(163b2c8b61a3ecb4ea45334400e257cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Fusebox 02.fbx using Guid(163b2c8b61a3ecb4ea45334400e257cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5bdbb157e6b1797f179f465eafeb0691') in 0.0200651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 01.fbx
+  artifactKey: Guid(bc85683a6fc9dcc4eab2eb1651f60ff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 01.fbx using Guid(bc85683a6fc9dcc4eab2eb1651f60ff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23a0dd1f714fc2f84aaca885359dc1a4') in 0.0179401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Filters/AnyGazedAtTeleportAnchorFilter.asset
+  artifactKey: Guid(0f906c94e2aa0c3488832acc1db04295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Filters/AnyGazedAtTeleportAnchorFilter.asset using Guid(0f906c94e2aa0c3488832acc1db04295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6917e90f96dec137ea5583ab064c0d37') in 0.0164956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 04.prefab
+  artifactKey: Guid(b0e81b98347f86e4b8f377f20dcc2a4e) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 04.prefab using Guid(b0e81b98347f86e4b8f377f20dcc2a4e) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'd7ebb2b9bdcbbd71d1292e0f2cea6608') in 0.0409476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 48
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_Normal.png
+  artifactKey: Guid(a84c0289c510d584fadaaa168c7fa347) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_Normal.png using Guid(a84c0289c510d584fadaaa168c7fa347) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec881cb80362d92aa0637557e9e59362') in 0.0618043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Floor/Tutor_floor_Paint_Material _27_MetallicSmoothness.png
+  artifactKey: Guid(8a833a74d7e81984da188be2415d01e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Floor/Tutor_floor_Paint_Material _27_MetallicSmoothness.png using Guid(8a833a74d7e81984da188be2415d01e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '098de86185f969724ca14188b77dd75e') in 0.0569212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Props_02/Light.mat
+  artifactKey: Guid(b3b0ce981e6260b4482f4d132f19d3ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Props_02/Light.mat using Guid(b3b0ce981e6260b4482f4d132f19d3ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0526b1e35986d742e6d052df662aec2c') in 0.0185963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Props/Glass.mat
+  artifactKey: Guid(f7d2532ad02953440bc91928ebb239a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Props/Glass.mat using Guid(f7d2532ad02953440bc91928ebb239a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da446f9436eee7b2913a4f53f109ab06') in 0.0183636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Models/Primitive_Blaster.fbx
+  artifactKey: Guid(e8cf87fef9298444ca38948b2c8a4073) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Models/Primitive_Blaster.fbx using Guid(e8cf87fef9298444ca38948b2c8a4073) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e1745dc46df0fbe6206fdd89b4dcc64') in 0.0230805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Models/PushButton.fbx
+  artifactKey: Guid(7ab6f3b0fd1a6ba41b2a47766c16613f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Models/PushButton.fbx using Guid(7ab6f3b0fd1a6ba41b2a47766c16613f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '527fcc1c21006119dd0217b0c729cb43') in 0.025094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Gaze Interactables.prefab
+  artifactKey: Guid(e05cd47ab8981f64badd3bfe29af8f4e) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Gaze Interactables.prefab using Guid(e05cd47ab8981f64badd3bfe29af8f4e) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'd59b94bca288ad8f3779efc5ddf22fc9') in 0.1526011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Items/Items_tut.mat
+  artifactKey: Guid(499f636039cff53419956b156122b2f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Items/Items_tut.mat using Guid(499f636039cff53419956b156122b2f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e7ef7b1d7ef348ff0a9c07166328702') in 0.1155821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Sprites/LegibilityMask.png
+  artifactKey: Guid(a85d80c1edb5d2f458d42e79f78055b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Sprites/LegibilityMask.png using Guid(a85d80c1edb5d2f458d42e79f78055b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8af383c203862174d8fbd20a9f454499') in 0.0247304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab
+  artifactKey: Guid(ad818c36731146e994540a1896ad8f24) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab using Guid(ad818c36731146e994540a1896ad8f24) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '0df55f4b1efd64cd6b507010c8bbcfdd') in 0.2859961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Sprites/Forward.png
+  artifactKey: Guid(f8ecc54972abacc46a93f671b0602139) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Sprites/Forward.png using Guid(f8ecc54972abacc46a93f671b0602139) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'afd3cb3d646968f6d76ff5f6b57256ba') in 0.0209268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Interactors/Teleport Interactor.prefab
+  artifactKey: Guid(c1800acf6366418a9b5f610249000331) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Interactors/Teleport Interactor.prefab using Guid(c1800acf6366418a9b5f610249000331) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'd2d49419555d8d40ca5724f2e324f6da') in 0.0448313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 38
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Controller/RightControllerOutline@2x.png
+  artifactKey: Guid(10dc4b76fedda43bc9f45737b47e2a35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Controller/RightControllerOutline@2x.png using Guid(10dc4b76fedda43bc9f45737b47e2a35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1bc3186c4803008bc0dfc1803904bcf7') in 0.0153842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Translate/TranslateRight@2x.png
+  artifactKey: Guid(eb5a85b675ed34acf9efd6d574df4ceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Translate/TranslateRight@2x.png using Guid(eb5a85b675ed34acf9efd6d574df4ceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0c927e58523f77d2eb629a0dc9d844c0') in 0.0284458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Rotate/RotateLeftArrow.png
+  artifactKey: Guid(e49c8945f20a44825a5c383e704bdd4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Rotate/RotateLeftArrow.png using Guid(e49c8945f20a44825a5c383e704bdd4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f8f00bc4b768ff88df6232ffa0501682') in 0.0221822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Hands/Pinch.png
+  artifactKey: Guid(45d5d868f6ac7433db8072bb252ca290) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Hands/Pinch.png using Guid(45d5d868f6ac7433db8072bb252ca290) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f862223939aa02a4a3e76c37095335d') in 0.0206201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Rotate/BackRotate@2x.png
+  artifactKey: Guid(db211eab80abe447b865ccff41592e0e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Rotate/BackRotate@2x.png using Guid(db211eab80abe447b865ccff41592e0e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aca2238ed0875c7793320fff877bcb77') in 0.0172332 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Controller/LeftControllerOutline@2x.png
+  artifactKey: Guid(86ad78bcde32c40de86c59ef68e8c525) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Controller/LeftControllerOutline@2x.png using Guid(86ad78bcde32c40de86c59ef68e8c525) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '377fc2fa620ed5b2da75848d696956f2') in 0.0182348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Far Grab Samples.prefab
+  artifactKey: Guid(f5ee409d69254d64da7a3b74d31a5a40) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Far Grab Samples.prefab using Guid(f5ee409d69254d64da7a3b74d31a5a40) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '91e9570014339b73aabcf9db7b19e683') in 0.1587758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 181
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/UI/Icon Button.prefab
+  artifactKey: Guid(56686f82f64b0af4688a89676403a500) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/UI/Icon Button.prefab using Guid(56686f82f64b0af4688a89676403a500) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'f8fd048ec206048798cd4ab6752db8c5') in 0.065094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/ClimbTeleportReticle.prefab
+  artifactKey: Guid(6eb816e9b7ce30f4cadff3d4ad7ad10c) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/ClimbTeleportReticle.prefab using Guid(6eb816e9b7ce30f4cadff3d4ad7ad10c) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: 'c693f588f08fd71a2cd84d2f84473b82') in 0.0441296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Ladder.prefab
+  artifactKey: Guid(b3830b3b2f190ee46a9c88433e985221) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Ladder.prefab using Guid(b3830b3b2f190ee46a9c88433e985221) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '1c9892dd0e8ae62a179c027ae18e711f') in 0.1367287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 142
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Push Button.prefab
+  artifactKey: Guid(76f3439a0ae796e4b81bee3f91f888ee) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Push Button.prefab using Guid(76f3439a0ae796e4b81bee3f91f888ee) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter) -> (artifact id: '5819aac54d93f5fe04a76bc0a6e9012c') in 0.060407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 45
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/garbage_bin_a.png
+  artifactKey: Guid(d9ae4d3b69f59704c9887f5ceb6ff8b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/garbage_bin_a.png using Guid(d9ae4d3b69f59704c9887f5ceb6ff8b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '01493afce01cdb242526d964a2922ff3') in 0.0174769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Materials/Sign Red.mat
+  artifactKey: Guid(104dfe4e9eaf15e42b9645fc2a6f54eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Materials/Sign Red.mat using Guid(104dfe4e9eaf15e42b9645fc2a6f54eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '26cb0c2ac420f43fb331821fcdfdeb46') in 0.0165755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Items/Items_PAint_DefaultMaterial_AlbedoTransparency.png
+  artifactKey: Guid(2f076916495a0f740bccb35e9c2efc1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Items/Items_PAint_DefaultMaterial_AlbedoTransparency.png using Guid(2f076916495a0f740bccb35e9c2efc1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e19e3d266bc94d3f63b7c433dadffe9') in 0.0248301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/security_cam_a.png
+  artifactKey: Guid(5aa42ca73b98db941ad37f3f7501d32d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/security_cam_a.png using Guid(5aa42ca73b98db941ad37f3f7501d32d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca8a04e625417d9a45a06bea17895392') in 0.0210708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MASH Virtual/Demo/Sci fi Access Machine Demo.unity
+  artifactKey: Guid(e7fac17560808284d9021e11b7b32bdd) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/MASH Virtual/Demo/Sci fi Access Machine Demo.unity using Guid(e7fac17560808284d9021e11b7b32bdd) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter)Opening scene 'Assets/MASH Virtual/Demo/Sci fi Access Machine Demo.unity additively'
+LightingSettings: switching bake backend from 2 to 1.
+Loaded scene 'Assets/MASH Virtual/Demo/Sci fi Access Machine Demo.unity'
+	Deserialize:            42.261 ms
+	Integration:            205.788 ms
+	Integration of assets:  5.835 ms
+	Thread Wait Time:       0.483 ms
+	Total Operation Time:   254.367 ms
+ -> (artifact id: '569f4b86f76be100f506d52e89625961') in 0.3132802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 126
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Materials/Interactable.mat
+  artifactKey: Guid(76618f7490c40334fa7b685859587d2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Materials/Interactable.mat using Guid(76618f7490c40334fa7b685859587d2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '68b03f9e943ac28881d1712443119c20') in 0.0360448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.931714 seconds.
+  path: Assets/Scenes/mp0.unity
+  artifactKey: Guid(285156e7087f4e6419f2726e5dcad9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/mp0.unity using Guid(285156e7087f4e6419f2726e5dcad9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95e7105c17b91752c682920f2e8a1eb4') in 0.0153217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 04.prefab
+  artifactKey: Guid(5b83660a4c6176b41bfec1b7029c6597) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 04.prefab using Guid(5b83660a4c6176b41bfec1b7029c6597) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0c2224a9de76a1fca0f4a3a239659845') in 0.0183416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 182
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts/Duct Tee.prefab
+  artifactKey: Guid(fd91a45b9242d2a49b339262053519ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts/Duct Tee.prefab using Guid(fd91a45b9242d2a49b339262053519ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '568f3a51fb8dc6926e1e0169d4e2d67e') in 0.0149769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Misc Props/Security Cam.prefab
+  artifactKey: Guid(e16cc1b8be9796744b8e44545a6aca19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Misc Props/Security Cam.prefab using Guid(e16cc1b8be9796744b8e44545a6aca19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6e4945801ca708c7edcd4355cbd0cf83') in 0.0172189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 03.prefab
+  artifactKey: Guid(78f2873840cccd046adee8782efa45fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 03.prefab using Guid(78f2873840cccd046adee8782efa45fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9b990e01c975812052ac30193b14eb8') in 0.017311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/smartPhoneLocked.prefab
+  artifactKey: Guid(e2b2a4dd4f183034b8cffc10fcf54e36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/smartPhoneLocked.prefab using Guid(e2b2a4dd4f183034b8cffc10fcf54e36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bc7bd28fe34db900cdf0b226dffc2c64') in 0.0144452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts/Duct Vent.prefab
+  artifactKey: Guid(573ef1f633878a64f8caef594c1c31d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts/Duct Vent.prefab using Guid(573ef1f633878a64f8caef594c1c31d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd890c77e9efba392cede70eff338a208') in 0.0178825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Rack.prefab
+  artifactKey: Guid(eea23849d1b5af640a393d1f6eb5be41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Rack.prefab using Guid(eea23849d1b5af640a393d1f6eb5be41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e38d42a34a425ef00e0deea4b9136bd') in 0.0151219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/phone.prefab
+  artifactKey: Guid(06416f0090eabed4d9c9ad1ede4ed373) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/phone.prefab using Guid(06416f0090eabed4d9c9ad1ede4ed373) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '733a75c25abe854530165d7284426894') in 0.0165734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Container_BigOpen.prefab
+  artifactKey: Guid(2791da188b845cc409e8b00443c20d21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Container_BigOpen.prefab using Guid(2791da188b845cc409e8b00443c20d21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c2e599227d09c03cdfbc9012f80d027c') in 0.0135359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Sci-Fi Barrel_Yellow.prefab
+  artifactKey: Guid(dce4bad8285329c4f9ce358b5c86ae55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Sci-Fi Barrel_Yellow.prefab using Guid(dce4bad8285329c4f9ce358b5c86ae55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '767ea0dc8a03c7092bedb152a923dd62') in 0.0166111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Teleport/Directional Teleport Reticle.prefab
+  artifactKey: Guid(893219773891c784ab469a39151879b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Teleport/Directional Teleport Reticle.prefab using Guid(893219773891c784ab469a39151879b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67981eb0a3b5c03661d8dd9db5b99a71') in 0.0149383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Background/Plane.prefab
+  artifactKey: Guid(1ad5b76b227b5f542a960088e67f2c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WONILMAX/Sci-Fi Barrel Pack/Prefabs/Background/Plane.prefab using Guid(1ad5b76b227b5f542a960088e67f2c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05acf153d62374f88588b458cb901e3e') in 0.0160766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Climbing Wall.prefab
+  artifactKey: Guid(a0ea40bd139aedc43b0e8374d6139437) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Climbing Wall.prefab using Guid(a0ea40bd139aedc43b0e8374d6139437) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5390f0e5e5ef79b15c393c9558bfdfa3') in 0.0217402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 345
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Affordances/HighlightInteractionAffordance.prefab
+  artifactKey: Guid(6b12f432fa58c224baf0d659706362be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Affordances/HighlightInteractionAffordance.prefab using Guid(6b12f432fa58c224baf0d659706362be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fbebd3514c846597495d2d358b81fdbf') in 0.0145436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Floor/Floor Tile 03.prefab
+  artifactKey: Guid(4f019145598ea474b899ca25a03acd09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Floor/Floor Tile 03.prefab using Guid(4f019145598ea474b899ca25a03acd09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4289e5de78bfbaf09577e45c5d6115d5') in 0.0176201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Structure Props/Exit Sign.prefab
+  artifactKey: Guid(4da7cd4243bfe9f44b3bc9ac63b3cd1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Structure Props/Exit Sign.prefab using Guid(4da7cd4243bfe9f44b3bc9ac63b3cd1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '34fa0fb3942a453334e8dad849f1327b') in 0.0140067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Stairs.prefab
+  artifactKey: Guid(65467f6b70ddf5e4890bd9f317b3a5b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Stairs.prefab using Guid(65467f6b70ddf5e4890bd9f317b3a5b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71d029ddc013e881b50976283864468d') in 0.015709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/CatWalk Stairs Wide.prefab
+  artifactKey: Guid(63d248e67db58c04aa37512e19848568) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/CatWalk Stairs Wide.prefab using Guid(63d248e67db58c04aa37512e19848568) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9efed01ea871b5462b228c93adde0f5f') in 0.013093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/UI/Scroll UI Sample.prefab
+  artifactKey: Guid(0cbc0856f0fb8d84a81be5dea463c369) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/UI/Scroll UI Sample.prefab using Guid(0cbc0856f0fb8d84a81be5dea463c369) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '417d4552adb8cedf531e476d29e01718') in 0.023676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Structure Props/Pipes 04.prefab
+  artifactKey: Guid(d6c6112ee867c574980a7331cc4cdb27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Structure Props/Pipes 04.prefab using Guid(d6c6112ee867c574980a7331cc4cdb27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df7d3ac3be51750ea1d3f736c2bddc88') in 0.0121267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Corridors/Corridor Incline Full.prefab
+  artifactKey: Guid(cc5db88956188ec4e99ecccc1cc1a855) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Corridors/Corridor Incline Full.prefab using Guid(cc5db88956188ec4e99ecccc1cc1a855) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2281d62573639850a4c7f7b21fa90ff') in 0.0149586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Single Floor Ladder.prefab
+  artifactKey: Guid(1f62bdd0e59688d4bb754afe89fa2f5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Single Floor Ladder.prefab using Guid(1f62bdd0e59688d4bb754afe89fa2f5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cd82d71ba448529f18f81f560ddeb3ca') in 0.027916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab
+  artifactKey: Guid(ad818c36731146e994540a1896ad8f24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab using Guid(ad818c36731146e994540a1896ad8f24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c194b3a32c7a546b892b99ec17c79edd') in 0.0255365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Broken_panel.prefab
+  artifactKey: Guid(41c92995c4a717d43b3f429a5f660c28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Prefabs/Broken_panel.prefab using Guid(41c92995c4a717d43b3f429a5f660c28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '439f40e7f655c29178c27c705238dc6a') in 0.0198354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/lamp.prefab
+  artifactKey: Guid(d4e217778e534cb4fa3724d3da631d58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/lamp.prefab using Guid(d4e217778e534cb4fa3724d3da631d58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50e209a7c213a159f71bf6ce55bf1c5a') in 0.0184046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 05.prefab
+  artifactKey: Guid(ce7e4bd04c6404147b4b1dc694ac9a00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 05.prefab using Guid(ce7e4bd04c6404147b4b1dc694ac9a00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd263d54c1b8b518d7f1484ab82629228') in 0.0182251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 182
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Rails Long.prefab
+  artifactKey: Guid(4e661a4b9cf2fac4dbc610ceb59e77b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Rails Long.prefab using Guid(4e661a4b9cf2fac4dbc610ceb59e77b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '86b2f6a2c2badc2c54467010fd4e1024') in 0.0154347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 08.prefab
+  artifactKey: Guid(6d25ffad04977674abb78a1e1ff00730) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 08.prefab using Guid(6d25ffad04977674abb78a1e1ff00730) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6cf2aab41b2de94e984f5eab7674f499') in 0.0214124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Multi Floor Ladder.prefab
+  artifactKey: Guid(652585f331bff7e44afb8fe71ec2119f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Climb/Multi Floor Ladder.prefab using Guid(652585f331bff7e44afb8fe71ec2119f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8885711bdee3560ec2bca7a93d869a50') in 0.0272044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 292
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Short.prefab
+  artifactKey: Guid(52c51744944b30b4395badb88a68a18b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Short.prefab using Guid(52c51744944b30b4395badb88a68a18b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54012dee9c86dc3e61e759ee8744e0ff') in 0.0193936 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts/Duct Elbow 02.prefab
+  artifactKey: Guid(3f8fbe2b2e0fcda49bdf4860e8efd375) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts/Duct Elbow 02.prefab using Guid(3f8fbe2b2e0fcda49bdf4860e8efd375) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c54f857cb4eaa3ff4898d5d859b97a2a') in 0.0169506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/fillingCabinet.prefab
+  artifactKey: Guid(2733057fdfdc3394bb27c77a4a5f5c5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/fillingCabinet.prefab using Guid(2733057fdfdc3394bb27c77a4a5f5c5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '104c30b1830ed64e0d830b41ee77f714') in 0.0188045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 01.prefab
+  artifactKey: Guid(350af83ef7fbacf4c81d93aaca7de956) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 01.prefab using Guid(350af83ef7fbacf4c81d93aaca7de956) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '518fc1cd531a082f71674510938f4c22') in 0.0227914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ADI/Voxel Office Props/Prefabs/tableCentre.prefab
+  artifactKey: Guid(1e84a5c2113512345bfbace90f70fbe6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ADI/Voxel Office Props/Prefabs/tableCentre.prefab using Guid(1e84a5c2113512345bfbace90f70fbe6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4bde8b1658bad24f2ad719a839c6fe8') in 0.0152571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/UI/TextButton.prefab
+  artifactKey: Guid(e5db301629853dd4a99835fa70099d79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/UI/TextButton.prefab using Guid(e5db301629853dd4a99835fa70099d79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f40a84f16fc0a22466385f3ab35c6795') in 0.0223993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/WONILMAX/Sci-Fi Barrel Pack/Scene/Scene.unity
+  artifactKey: Guid(6380fe109bed1ad49b9e5a255b82bdf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WONILMAX/Sci-Fi Barrel Pack/Scene/Scene.unity using Guid(6380fe109bed1ad49b9e5a255b82bdf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69e6fbcea4a391ff007ec148305ba789') in 0.0133615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Interactables Sample.prefab
+  artifactKey: Guid(6821e1b7f44d8c44b8a2ba02f37309d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoSceneAssets/Prefabs/Interactables Sample.prefab using Guid(6821e1b7f44d8c44b8a2ba02f37309d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '44765e5d49f93431df11de7a7dbd774e') in 0.0147647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 68
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.076819 seconds.
+  path: Assets/Samples/OpenXR Plugin/1.16.1/Controller/Prefabs/Controller.prefab
+  artifactKey: Guid(81eb8a07f64251845bbe5c9a2ef66920) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/OpenXR Plugin/1.16.1/Controller/Prefabs/Controller.prefab using Guid(81eb8a07f64251845bbe5c9a2ef66920) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eaa28498b3365bace025f88c817ad925') in 0.0270217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 404
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.081948 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv09.prefab
+  artifactKey: Guid(5f285e9508d4e3f4488b284bb80a0b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv09.prefab using Guid(5f285e9508d4e3f4488b284bb80a0b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71aa6f4eca2461a56d152e6a850f0363') in 0.0568294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.156729 seconds.
+  path: Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv10.prefab
+  artifactKey: Guid(227f9257bcc7175478a7f935e3bfc552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SineVFX/TranslucentCrystals/Prefabs/Crystalsv10.prefab using Guid(227f9257bcc7175478a7f935e3bfc552) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75cd82049c24de4c2dcb47e8d82461fb') in 0.0604847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.344427 seconds.
+  path: Assets/Stylized Crystal/scene.unity
+  artifactKey: Guid(585574a3663ec1742849bdca43b05f41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Stylized Crystal/scene.unity using Guid(585574a3663ec1742849bdca43b05f41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bf5be1cd187d9b32f72ae041370291be') in 0.0179068 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Stylized Crystal/Mesh/Materials
+  artifactKey: Guid(21e2df665eb8b834da04ec638377cb31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Stylized Crystal/Mesh/Materials using Guid(21e2df665eb8b834da04ec638377cb31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6f43d3044e27e1ecdae4f65cb2fe9db') in 0.016088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Stylized Crystal/Prefab/crystal_17_2.prefab
+  artifactKey: Guid(465c505844950da499dcf096a6da4409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Stylized Crystal/Prefab/crystal_17_2.prefab using Guid(465c505844950da499dcf096a6da4409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19963c6f89a24bb43232c14948669a4b') in 0.0329563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Stylized Crystal
+  artifactKey: Guid(b3a3a916a62ba1744991c21768606a15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Stylized Crystal using Guid(b3a3a916a62ba1744991c21768606a15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '98fa4574902cb2f3d143ceba57340de1') in 0.0134566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Stylized Crystal/Texture/crystal_17_2.png
+  artifactKey: Guid(6f719c3bb48788e439c27891aa28f61f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Stylized Crystal/Texture/crystal_17_2.png using Guid(6f719c3bb48788e439c27891aa28f61f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '394a040e1698f3ede94ec4d011dc2fbd') in 0.0281293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Stylized Crystal/Prefab
+  artifactKey: Guid(83fa5217c255ec9448388f305d35a310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Stylized Crystal/Prefab using Guid(83fa5217c255ec9448388f305d35a310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd0dbb062f21ef0dfd0ac4e4ac0e2192') in 0.0180761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.389746 seconds.
+  path: Assets/Stylized Crystal/Texture
+  artifactKey: Guid(bbbeec8a69534044bba90a08368e2de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Crystal/Texture using Guid(bbbeec8a69534044bba90a08368e2de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '617cfd7f5da021390db4bac66b50bc23') in 0.0005669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.555360 seconds.
+  path: Assets/Stylized Crystal/Prefab
+  artifactKey: Guid(83fa5217c255ec9448388f305d35a310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Crystal/Prefab using Guid(83fa5217c255ec9448388f305d35a310) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cfeca58eae7e49df5331800aece0c00') in 0.0004843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.434043 seconds.
+  path: Assets/Stylized Crystal/Prefab/crystal_17_2.prefab
+  artifactKey: Guid(465c505844950da499dcf096a6da4409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Crystal/Prefab/crystal_17_2.prefab using Guid(465c505844950da499dcf096a6da4409) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f1a9bd91dabf82cc934a0410ac051c8') in 0.0380284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.963909 seconds.
+  path: Assets/Stylized Crystal/Texture/crystal_17_2.png
+  artifactKey: Guid(6f719c3bb48788e439c27891aa28f61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Crystal/Texture/crystal_17_2.png using Guid(6f719c3bb48788e439c27891aa28f61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d5470fb4c5a9cafc5e9f3d139339339') in 0.0364316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.123596 seconds.
+  path: Assets/Stylized Crystal/scene.unity
+  artifactKey: Guid(585574a3663ec1742849bdca43b05f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Crystal/scene.unity using Guid(585574a3663ec1742849bdca43b05f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '358467c8b818feba7b1fbc966f81a26f') in 0.0005199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.660098 seconds.
+  path: Assets/Stylized Crystal/Prefab/crystal_17_2.prefab
+  artifactKey: Guid(465c505844950da499dcf096a6da4409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Stylized Crystal/Prefab/crystal_17_2.prefab using Guid(465c505844950da499dcf096a6da4409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ec55511af9ea7688a5c96b954035e63') in 0.0198731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.946083 seconds.
+  path: Assets/MASH Virtual/Sci fi Access Machine/Texture/Access Card Machine_AlbedoTransparency.png
+  artifactKey: Guid(b6b586a84828c0245a2694340c96487d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MASH Virtual/Sci fi Access Machine/Texture/Access Card Machine_AlbedoTransparency.png using Guid(b6b586a84828c0245a2694340c96487d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdbc3b1bc4481890114014a5064c8820') in 0.0200827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_Normal.png
+  artifactKey: Guid(a84c0289c510d584fadaaa168c7fa347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_Normal.png using Guid(a84c0289c510d584fadaaa168c7fa347) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9286610e9a0c463276061e8bf5d0f8a') in 0.0419755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/MASH Virtual/Sci Fi Chip/Texture/Chip_Chip_MetallicSmoothness.png
+  artifactKey: Guid(a0d97c195de80b14fb5443c4a39870a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MASH Virtual/Sci Fi Chip/Texture/Chip_Chip_MetallicSmoothness.png using Guid(a0d97c195de80b14fb5443c4a39870a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50fa8785d57117bb640116f5e26394ef') in 0.0254079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_Emission.png
+  artifactKey: Guid(c208831a16232b742bf71e1b9aecbbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_Emission.png using Guid(c208831a16232b742bf71e1b9aecbbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cded19c93b683af04b68416d03e9796') in 0.0321708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/WONILMAX/Sci-Fi Barrel Pack/Textures/Background/Checker_BaseColor.png
+  artifactKey: Guid(3ba9bde9de33afe4f9ed66d6d32a5458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WONILMAX/Sci-Fi Barrel Pack/Textures/Background/Checker_BaseColor.png using Guid(3ba9bde9de33afe4f9ed66d6d32a5458) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea1dfb1152904636b0adb6568c6d2b37') in 0.0245095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_AlbedoTransparency.png
+  artifactKey: Guid(4c5a6d6bf83fdd449a382331db7f1633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Sci-fi_assets/Sci-Fi Old rusty props PBR/Data/Textures/Containers/Big_storage_Containers_PAINT_Material _27_AlbedoTransparency.png using Guid(4c5a6d6bf83fdd449a382331db7f1633) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd22eece0b0d71b18cf9849a0adfb58cc') in 0.0591674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MASH Virtual/Sci fi Access Machine/Texture/Access Card Machine_MetallicSmoothness.png
+  artifactKey: Guid(565a97286b1959748b3823753a63baa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MASH Virtual/Sci fi Access Machine/Texture/Access Card Machine_MetallicSmoothness.png using Guid(565a97286b1959748b3823753a63baa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dafa192b364d71dc2c5d0f6c728c082c') in 0.0201612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
